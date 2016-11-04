@@ -14,5 +14,6 @@ Gem::Specification.new do |s|
   s.add_development_dependency 'rake', '~> 11.3.0'
   s.add_development_dependency 'pry', '~> 0.10'
   s.add_development_dependency 'rubocop', '~> 0.43.0'
+  s.add_development_dependency 'reek', '~> 4.5'
   s.add_development_dependency 'minitest', '~> 5.9.1'
 end

@@ -3,14 +3,14 @@ require 'slim'
 
 class Debride
   module Slim
-    VERSION = '1.0.0'
+    VERSION = '1.0.0'.freeze
   end
 
-  def process_slim file
+  def process_slim(file)
     ruby = ::Slim::Template.new(file).instance_variable_get('@src')
 
     begin
-      RubyParser.new.process ruby, file
+      RubyParser.new.process(ruby, file)
     rescue => e
       warn ruby if option[:verbose]
       raise e

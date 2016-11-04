@@ -1,0 +1,22 @@
+AllCops:
+    TargetRubyVersion: 2.3
+    DisplayCopNames: true
+
+Documentation:
+    Enabled: false
+
+Style/TrailingCommaInLiteral:
+    EnforcedStyleForMultiline: comma
+
+Style/TrailingCommaInArguments:
+    EnforcedStyleForMultiline: comma
+
+Style/FrozenStringLiteralComment:
+    Enabled: false
+
+Metrics/AbcSize:
+    Exclude:
+    - test/*.rb
+
+Style/ClassAndModuleChildren:
+    EnforcedStyle: compact
